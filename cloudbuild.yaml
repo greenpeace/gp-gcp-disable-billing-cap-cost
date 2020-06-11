@@ -1,0 +1,13 @@
+steps:
+  - name: "gcr.io/cloud-builders/gcloud"
+    waitFor: ["-"]
+    args:
+      - functions
+      - deploy
+      - gpi_techlab_budgets_notifications    
+      - --runtime=python37
+      - --allow-unauthenticated
+      - --trigger-topic=budgets-notifications
+      - --region=europe-west1
+      - --memory=128MB
+    id: "deploying-a-serverless-function"
