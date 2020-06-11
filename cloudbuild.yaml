@@ -4,7 +4,7 @@ steps:
     args:
       - functions
       - deploy
-      - gpi_techlab_budgets_notifications    
+      - gp_disable_billing_cap_cost    
       - --runtime=python37
       - --allow-unauthenticated
       - --trigger-topic=budgets-notifications

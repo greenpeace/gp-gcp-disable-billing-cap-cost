@@ -33,7 +33,7 @@ headers = {
     'Content-Type': 'application/json'
 }
 
-def gpi_disable_billing_cap_cost(data, context):
+def gp_disable_billing_cap_cost(data, context):
 
     import base64
     import json

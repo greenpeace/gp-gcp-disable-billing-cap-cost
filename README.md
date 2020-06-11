@@ -67,7 +67,7 @@ To give the Cloud Function runtime service account the Browser role, you need to
 The Cloud Billing API, Cloud Pub/Sub and Cloud Function calls and data is on the free tier.
 
 # Deploy command line
-gcloud functions deploy gpi_cap_budget --region=europe-west1 --memory=128MB --runtime=python37 --trigger-topic=budgets-notifications
+gcloud functions deploy gp_disable_billing_cap_cost --region=europe-west1 --memory=128MB --runtime=python37 --trigger-topic=budgets-notifications
 
 ## Enable Secrets API with command line
 gcloud services enable secretmanager.googleapis.com cloudfunctions.googleapis.com
